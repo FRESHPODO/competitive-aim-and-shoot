@@ -1,0 +1,279 @@
+{
+  "a_noisy": {
+    "decisionAgent": null,
+    "decisionEnabled": [
+      false,
+      false
+    ],
+    "targetHp": 1000,
+    "minDamage": 100,
+    "maxDamage": 300,
+    "targetRadius": 5,
+    "criticalRadius": 0.01,
+    "randomTargetSpeed": true,
+    "targetSpeedMin": 0,
+    "targetSpeedMax": 40,
+    "randomTargetSpawn": true,
+    "shotIntervalsMs": [
+      150,
+      150
+    ],
+    "shotSpreadDeg": [
+      0,
+      0
+    ],
+    "profiles": [
+      [
+        0.30000000000000004,
+        0.12,
+        0.06,
+        0.06,
+        40,
+        12,
+        40,
+        45
+      ],
+      [
+        0.2,
+        0.08,
+        0.04,
+        0.04,
+        40,
+        12,
+        40,
+        45
+      ]
+    ]
+  },
+  "b_noisy": {
+    "decisionAgent": null,
+    "decisionEnabled": [
+      false,
+      false
+    ],
+    "targetHp": 1000,
+    "minDamage": 100,
+    "maxDamage": 300,
+    "targetRadius": 5,
+    "criticalRadius": 0.01,
+    "randomTargetSpeed": true,
+    "targetSpeedMin": 0,
+    "targetSpeedMax": 40,
+    "randomTargetSpawn": true,
+    "shotIntervalsMs": [
+      150,
+      150
+    ],
+    "shotSpreadDeg": [
+      0,
+      0
+    ],
+    "profiles": [
+      [
+        0.2,
+        0.08,
+        0.04,
+        0.04,
+        40,
+        12,
+        40,
+        45
+      ],
+      [
+        0.30000000000000004,
+        0.12,
+        0.06,
+        0.06,
+        40,
+        12,
+        40,
+        45
+      ]
+    ]
+  },
+  "a_precise": {
+    "decisionAgent": null,
+    "decisionEnabled": [
+      false,
+      false
+    ],
+    "targetHp": 1000,
+    "minDamage": 100,
+    "maxDamage": 300,
+    "targetRadius": 5,
+    "criticalRadius": 0.01,
+    "randomTargetSpeed": true,
+    "targetSpeedMin": 0,
+    "targetSpeedMax": 40,
+    "randomTargetSpawn": true,
+    "shotIntervalsMs": [
+      150,
+      150
+    ],
+    "shotSpreadDeg": [
+      0,
+      0
+    ],
+    "profiles": [
+      [
+        0.1,
+        0.04,
+        0.02,
+        0.02,
+        40,
+        12,
+        40,
+        45
+      ],
+      [
+        0.2,
+        0.08,
+        0.04,
+        0.04,
+        40,
+        12,
+        40,
+        45
+      ]
+    ]
+  },
+  "b_precise": {
+    "decisionAgent": null,
+    "decisionEnabled": [
+      false,
+      false
+    ],
+    "targetHp": 1000,
+    "minDamage": 100,
+    "maxDamage": 300,
+    "targetRadius": 5,
+    "criticalRadius": 0.01,
+    "randomTargetSpeed": true,
+    "targetSpeedMin": 0,
+    "targetSpeedMax": 40,
+    "randomTargetSpawn": true,
+    "shotIntervalsMs": [
+      150,
+      150
+    ],
+    "shotSpreadDeg": [
+      0,
+      0
+    ],
+    "profiles": [
+      [
+        0.2,
+        0.08,
+        0.04,
+        0.04,
+        40,
+        12,
+        40,
+        45
+      ],
+      [
+        0.1,
+        0.04,
+        0.02,
+        0.02,
+        40,
+        12,
+        40,
+        45
+      ]
+    ]
+  },
+  "a_noisy_wide_critical": {
+    "decisionAgent": null,
+    "decisionEnabled": [
+      false,
+      false
+    ],
+    "targetHp": 1000,
+    "minDamage": 100,
+    "maxDamage": 300,
+    "targetRadius": 5,
+    "criticalRadius": 0.1,
+    "randomTargetSpeed": true,
+    "targetSpeedMin": 0,
+    "targetSpeedMax": 40,
+    "randomTargetSpawn": true,
+    "shotIntervalsMs": [
+      150,
+      150
+    ],
+    "shotSpreadDeg": [
+      0,
+      0
+    ],
+    "profiles": [
+      [
+        0.30000000000000004,
+        0.12,
+        0.06,
+        0.06,
+        40,
+        12,
+        40,
+        45
+      ],
+      [
+        0.2,
+        0.08,
+        0.04,
+        0.04,
+        40,
+        12,
+        40,
+        45
+      ]
+    ]
+  },
+  "b_noisy_slow_weapon": {
+    "decisionAgent": null,
+    "decisionEnabled": [
+      false,
+      false
+    ],
+    "targetHp": 1000,
+    "minDamage": 100,
+    "maxDamage": 300,
+    "targetRadius": 5,
+    "criticalRadius": 0.01,
+    "randomTargetSpeed": true,
+    "targetSpeedMin": 0,
+    "targetSpeedMax": 40,
+    "randomTargetSpawn": true,
+    "shotIntervalsMs": [
+      400,
+      150
+    ],
+    "shotSpreadDeg": [
+      1,
+      0
+    ],
+    "profiles": [
+      [
+        0.2,
+        0.08,
+        0.04,
+        0.04,
+        40,
+        12,
+        40,
+        45
+      ],
+      [
+        0.30000000000000004,
+        0.12,
+        0.06,
+        0.06,
+        40,
+        12,
+        40,
+        45
+      ]
+    ]
+  },
+  "mixed_parameters": null
+}

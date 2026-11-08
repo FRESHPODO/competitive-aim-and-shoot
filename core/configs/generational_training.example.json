@@ -1,0 +1,267 @@
+{
+  "kind": "generational-single-learner-v1",
+  "episodes": 150000,
+  "timeout": 12.0,
+  "batchEpisodes": 16,
+  "workers": 0,
+  "generationGames": 10000,
+  "retainedGenerations": 3,
+  "checkpointSeconds": 60.0,
+  "seed": null,
+  "settings": {
+    "targetHp": {
+      "mode": "fixed",
+      "value": 1000,
+      "min": 1000,
+      "max": 1000,
+      "step": 1.0
+    },
+    "criticalRadius": {
+      "mode": "fixed",
+      "value": 0.01,
+      "min": 0.01,
+      "max": 0.01,
+      "step": 0.01
+    },
+    "targetRadius": {
+      "mode": "fixed",
+      "value": 5,
+      "min": 5,
+      "max": 5,
+      "step": 1.0
+    },
+    "targetSpeed": {
+      "mode": "uniform",
+      "value": 12,
+      "min": 0,
+      "max": 40,
+      "step": 1.0
+    },
+    "A.motor": {
+      "mode": "fixed",
+      "value": 0.30000000000000004,
+      "min": 0.30000000000000004,
+      "max": 0.30000000000000004,
+      "step": 0.01
+    },
+    "A.position": {
+      "mode": "fixed",
+      "value": 0.12,
+      "min": 0.12,
+      "max": 0.12,
+      "step": 0.01
+    },
+    "A.speed": {
+      "mode": "fixed",
+      "value": 0.06,
+      "min": 0.06,
+      "max": 0.06,
+      "step": 0.01
+    },
+    "A.clock": {
+      "mode": "fixed",
+      "value": 0.06,
+      "min": 0.06,
+      "max": 0.06,
+      "step": 0.01
+    },
+    "A.success": {
+      "mode": "fixed",
+      "value": 40,
+      "min": 40,
+      "max": 40,
+      "step": 1.0
+    },
+    "A.failure": {
+      "mode": "fixed",
+      "value": 12,
+      "min": 12,
+      "max": 12,
+      "step": 1.0
+    },
+    "A.reward_decay": {
+      "mode": "fixed",
+      "value": 40,
+      "min": 40,
+      "max": 40,
+      "step": 1.0
+    },
+    "A.penalty_decay": {
+      "mode": "fixed",
+      "value": 45,
+      "min": 45,
+      "max": 45,
+      "step": 1.0
+    },
+    "A.minDamage": {
+      "mode": "fixed",
+      "value": 100,
+      "min": 100,
+      "max": 100,
+      "step": 1.0
+    },
+    "A.maxDamage": {
+      "mode": "fixed",
+      "value": 400,
+      "min": 400,
+      "max": 400,
+      "step": 1.0
+    },
+    "A.cooldown": {
+      "mode": "fixed",
+      "value": 400,
+      "min": 400,
+      "max": 400,
+      "step": 1.0
+    },
+    "A.spread": {
+      "mode": "fixed",
+      "value": 0,
+      "min": 0,
+      "max": 0,
+      "step": 1.0
+    },
+    "A.instantKill": {
+      "mode": "fixed",
+      "value": 1,
+      "min": 1,
+      "max": 1,
+      "step": 1.0
+    },
+    "A.spreadEnabled": {
+      "mode": "fixed",
+      "value": 0,
+      "min": 0,
+      "max": 0,
+      "step": 1.0
+    },
+    "B.motor": {
+      "mode": "fixed",
+      "value": 0.2,
+      "min": 0.2,
+      "max": 0.2,
+      "step": 0.01
+    },
+    "B.position": {
+      "mode": "fixed",
+      "value": 0.08,
+      "min": 0.08,
+      "max": 0.08,
+      "step": 0.01
+    },
+    "B.speed": {
+      "mode": "fixed",
+      "value": 0.04,
+      "min": 0.04,
+      "max": 0.04,
+      "step": 0.01
+    },
+    "B.clock": {
+      "mode": "fixed",
+      "value": 0.04,
+      "min": 0.04,
+      "max": 0.04,
+      "step": 0.01
+    },
+    "B.success": {
+      "mode": "fixed",
+      "value": 40,
+      "min": 40,
+      "max": 40,
+      "step": 1.0
+    },
+    "B.failure": {
+      "mode": "fixed",
+      "value": 12,
+      "min": 12,
+      "max": 12,
+      "step": 1.0
+    },
+    "B.reward_decay": {
+      "mode": "fixed",
+      "value": 40,
+      "min": 40,
+      "max": 40,
+      "step": 1.0
+    },
+    "B.penalty_decay": {
+      "mode": "fixed",
+      "value": 45,
+      "min": 45,
+      "max": 45,
+      "step": 1.0
+    },
+    "B.minDamage": {
+      "mode": "fixed",
+      "value": 100,
+      "min": 100,
+      "max": 100,
+      "step": 1.0
+    },
+    "B.maxDamage": {
+      "mode": "fixed",
+      "value": 400,
+      "min": 400,
+      "max": 400,
+      "step": 1.0
+    },
+    "B.cooldown": {
+      "mode": "fixed",
+      "value": 400,
+      "min": 400,
+      "max": 400,
+      "step": 1.0
+    },
+    "B.spread": {
+      "mode": "fixed",
+      "value": 0,
+      "min": 0,
+      "max": 0,
+      "step": 1.0
+    },
+    "B.instantKill": {
+      "mode": "fixed",
+      "value": 1,
+      "min": 1,
+      "max": 1,
+      "step": 1.0
+    },
+    "B.spreadEnabled": {
+      "mode": "fixed",
+      "value": 0,
+      "min": 0,
+      "max": 0,
+      "step": 1.0
+    }
+  },
+  "rewardConfig": {
+    "A": {
+      "alpha": {
+        "mode": "fixed",
+        "value": 0.5,
+        "min": 0.0,
+        "max": 1.0,
+        "step": 0.05
+      }
+    },
+    "B": {
+      "alpha": {
+        "mode": "fixed",
+        "value": 0.5,
+        "min": 0.0,
+        "max": 1.0,
+        "step": 0.05
+      }
+    }
+  },
+  "presetChoices": {
+    "A": [
+      "professional_mean",
+      "amateur_mean"
+    ],
+    "B": [
+      "professional_mean",
+      "amateur_mean"
+    ]
+  }
+}

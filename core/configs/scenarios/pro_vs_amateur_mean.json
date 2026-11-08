@@ -1,0 +1,289 @@
+{
+  "episodes": 1000,
+  "timeoutSeconds": 30,
+  "seed": 421,
+  "parameters": {
+    "targetHp": {
+      "mode": "fixed",
+      "value": 1000,
+      "min": 1000,
+      "max": 1000,
+      "step": 1.0
+    },
+    "criticalRadius": {
+      "mode": "fixed",
+      "value": 0.01,
+      "min": 0.01,
+      "max": 0.01,
+      "step": 0.01
+    },
+    "targetRadius": {
+      "mode": "fixed",
+      "value": 5,
+      "min": 5,
+      "max": 5,
+      "step": 1.0
+    },
+    "targetSpeed": {
+      "mode": "uniform",
+      "value": 12,
+      "min": 0,
+      "max": 40,
+      "step": 1.0
+    },
+    "A.motor": {
+      "mode": "fixed",
+      "value": 0.220554662,
+      "min": 0.220554662,
+      "max": 0.220554662,
+      "step": 0.01
+    },
+    "A.position": {
+      "mode": "fixed",
+      "value": 0.111330287725,
+      "min": 0.111330287725,
+      "max": 0.111330287725,
+      "step": 0.01
+    },
+    "A.speed": {
+      "mode": "fixed",
+      "value": 0.04513306685,
+      "min": 0.04513306685,
+      "max": 0.04513306685,
+      "step": 0.01
+    },
+    "A.clock": {
+      "mode": "fixed",
+      "value": 0.062930398075,
+      "min": 0.062930398075,
+      "max": 0.062930398075,
+      "step": 0.01
+    },
+    "A.success": {
+      "mode": "fixed",
+      "value": 38.593093275,
+      "min": 38.593093275,
+      "max": 38.593093275,
+      "step": 1.0
+    },
+    "A.failure": {
+      "mode": "fixed",
+      "value": 17.0902560125,
+      "min": 17.0902560125,
+      "max": 17.0902560125,
+      "step": 1.0
+    },
+    "A.reward_decay": {
+      "mode": "fixed",
+      "value": 43.115436,
+      "min": 43.115436,
+      "max": 43.115436,
+      "step": 1.0
+    },
+    "A.penalty_decay": {
+      "mode": "fixed",
+      "value": 39.650022325,
+      "min": 39.650022325,
+      "max": 39.650022325,
+      "step": 1.0
+    },
+    "A.minDamage": {
+      "mode": "fixed",
+      "value": 100,
+      "min": 100,
+      "max": 100,
+      "step": 1.0
+    },
+    "A.maxDamage": {
+      "mode": "fixed",
+      "value": 300,
+      "min": 300,
+      "max": 300,
+      "step": 1.0
+    },
+    "A.cooldown": {
+      "mode": "fixed",
+      "value": 150,
+      "min": 150,
+      "max": 150,
+      "step": 1.0
+    },
+    "A.spread": {
+      "mode": "fixed",
+      "value": 0,
+      "min": 0,
+      "max": 0,
+      "step": 1.0
+    },
+    "A.instantKill": {
+      "mode": "fixed",
+      "value": 1,
+      "min": 1,
+      "max": 1,
+      "step": 1.0
+    },
+    "A.spreadEnabled": {
+      "mode": "fixed",
+      "value": 0,
+      "min": 0,
+      "max": 0,
+      "step": 1.0
+    },
+    "B.motor": {
+      "mode": "fixed",
+      "value": 0.242286847375,
+      "min": 0.242286847375,
+      "max": 0.242286847375,
+      "step": 0.01
+    },
+    "B.position": {
+      "mode": "fixed",
+      "value": 0.171760898125,
+      "min": 0.171760898125,
+      "max": 0.171760898125,
+      "step": 0.01
+    },
+    "B.speed": {
+      "mode": "fixed",
+      "value": 0.059506628495,
+      "min": 0.059506628495,
+      "max": 0.059506628495,
+      "step": 0.01
+    },
+    "B.clock": {
+      "mode": "fixed",
+      "value": 0.07250821545,
+      "min": 0.07250821545,
+      "max": 0.07250821545,
+      "step": 0.01
+    },
+    "B.success": {
+      "mode": "fixed",
+      "value": 32.274419,
+      "min": 32.274419,
+      "max": 32.274419,
+      "step": 1.0
+    },
+    "B.failure": {
+      "mode": "fixed",
+      "value": 20.79447165,
+      "min": 20.79447165,
+      "max": 20.79447165,
+      "step": 1.0
+    },
+    "B.reward_decay": {
+      "mode": "fixed",
+      "value": 35.55573295,
+      "min": 35.55573295,
+      "max": 35.55573295,
+      "step": 1.0
+    },
+    "B.penalty_decay": {
+      "mode": "fixed",
+      "value": 50.823218825,
+      "min": 50.823218825,
+      "max": 50.823218825,
+      "step": 1.0
+    },
+    "B.minDamage": {
+      "mode": "fixed",
+      "value": 100,
+      "min": 100,
+      "max": 100,
+      "step": 1.0
+    },
+    "B.maxDamage": {
+      "mode": "fixed",
+      "value": 300,
+      "min": 300,
+      "max": 300,
+      "step": 1.0
+    },
+    "B.cooldown": {
+      "mode": "fixed",
+      "value": 150,
+      "min": 150,
+      "max": 150,
+      "step": 1.0
+    },
+    "B.spread": {
+      "mode": "fixed",
+      "value": 0,
+      "min": 0,
+      "max": 0,
+      "step": 1.0
+    },
+    "B.instantKill": {
+      "mode": "fixed",
+      "value": 1,
+      "min": 1,
+      "max": 1,
+      "step": 1.0
+    },
+    "B.spreadEnabled": {
+      "mode": "fixed",
+      "value": 0,
+      "min": 0,
+      "max": 0,
+      "step": 1.0
+    }
+  },
+  "rewardConfig": {
+    "A": {
+      "win": {
+        "mode": "fixed",
+        "value": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "step": 1.0
+      },
+      "loss": {
+        "mode": "fixed",
+        "value": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "step": 1.0
+      }
+    },
+    "B": {
+      "win": {
+        "mode": "fixed",
+        "value": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "step": 1.0
+      },
+      "loss": {
+        "mode": "fixed",
+        "value": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "step": 1.0
+      }
+    }
+  },
+  "playerPresets": {
+    "A": {
+      "id": "professional_mean",
+      "label": "프로 평균",
+      "kind": "group_mean",
+      "group": "professional",
+      "n_players": 10,
+      "n_rows": 40,
+      "doi": "10.1016/j.ijhcs.2025.103503",
+      "source_csv": "empirical/ijhcs_inference_results.csv",
+      "source_sha256": "61f363ac24f807658b020bdec7c2f016f617f62c8839a2c9fdb98f519e1f9a20"
+    },
+    "B": {
+      "id": "amateur_mean",
+      "label": "아마추어 평균",
+      "kind": "group_mean",
+      "group": "amateur",
+      "n_players": 10,
+      "n_rows": 40,
+      "doi": "10.1016/j.ijhcs.2025.103503",
+      "source_csv": "empirical/ijhcs_inference_results.csv",
+      "source_sha256": "61f363ac24f807658b020bdec7c2f016f617f62c8839a2c9fdb98f519e1f9a20"
+    }
+  }
+}

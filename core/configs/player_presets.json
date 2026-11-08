@@ -1,0 +1,647 @@
+{
+  "schema_version": 1,
+  "doi": "10.1016/j.ijhcs.2025.103503",
+  "source_csv": "empirical/ijhcs_inference_results.csv",
+  "source_sha256": "61f363ac24f807658b020bdec7c2f016f617f62c8839a2c9fdb98f519e1f9a20",
+  "mean_aggregation": "Average four conditions per participant, then average participants within each group",
+  "scope": "Original Aim-and-Shoot parameters only; inferred participant-condition values, not directly measured human noise or competitive PPO rewards",
+  "presets": [
+    {
+      "id": "professional_mean",
+      "label": "프로 평균",
+      "kind": "group_mean",
+      "group": "professional",
+      "n_players": 10,
+      "n_rows": 40,
+      "parameters": {
+        "motor": 0.220554662,
+        "position": 0.111330287725,
+        "speed": 0.04513306685,
+        "clock": 0.062930398075,
+        "success": 38.593093275,
+        "failure": 17.0902560125,
+        "reward_decay": 43.115436,
+        "penalty_decay": 39.650022325
+      }
+    },
+    {
+      "id": "professional_p00_habitual_white",
+      "label": "프로 P01",
+      "kind": "individual_condition",
+      "group": "professional",
+      "player_index": 0,
+      "within_group_index": 0,
+      "sensitivity_mode": "habitual",
+      "target_color_level": "white",
+      "parameters": {
+        "motor": 0.22627196,
+        "position": 0.097331464,
+        "speed": 0.027683198,
+        "clock": 0.034341216,
+        "success": 42.91365,
+        "failure": 11.606518,
+        "reward_decay": 38.724047,
+        "penalty_decay": 47.297943
+      },
+      "raw_values": {
+        "motor": "0.22627196",
+        "position": "0.097331464",
+        "speed": "0.027683198",
+        "clock": "0.034341216",
+        "success": "42.91365",
+        "failure": "11.606518",
+        "reward_decay": "38.724047",
+        "penalty_decay": "47.297943"
+      }
+    },
+    {
+      "id": "professional_p01_habitual_white",
+      "label": "프로 P02",
+      "kind": "individual_condition",
+      "group": "professional",
+      "player_index": 1,
+      "within_group_index": 1,
+      "sensitivity_mode": "habitual",
+      "target_color_level": "white",
+      "parameters": {
+        "motor": 0.25722384,
+        "position": 0.07124719,
+        "speed": 0.06955856,
+        "clock": 0.04747981,
+        "success": 48.145782,
+        "failure": 26.264162,
+        "reward_decay": 41.66038,
+        "penalty_decay": 20.940429
+      },
+      "raw_values": {
+        "motor": "0.25722384",
+        "position": "0.07124719",
+        "speed": "0.06955856",
+        "clock": "0.04747981",
+        "success": "48.145782",
+        "failure": "26.264162",
+        "reward_decay": "41.66038",
+        "penalty_decay": "20.940429"
+      }
+    },
+    {
+      "id": "professional_p02_habitual_white",
+      "label": "프로 P03",
+      "kind": "individual_condition",
+      "group": "professional",
+      "player_index": 2,
+      "within_group_index": 2,
+      "sensitivity_mode": "habitual",
+      "target_color_level": "white",
+      "parameters": {
+        "motor": 0.22490396,
+        "position": 0.099130616,
+        "speed": 0.01963827,
+        "clock": 0.040304244,
+        "success": 36.947662,
+        "failure": 12.6314945,
+        "reward_decay": 39.44607,
+        "penalty_decay": 53.68183
+      },
+      "raw_values": {
+        "motor": "0.22490396",
+        "position": "0.099130616",
+        "speed": "0.01963827",
+        "clock": "0.040304244",
+        "success": "36.947662",
+        "failure": "12.6314945",
+        "reward_decay": "39.44607",
+        "penalty_decay": "53.68183"
+      }
+    },
+    {
+      "id": "professional_p03_habitual_white",
+      "label": "프로 P04",
+      "kind": "individual_condition",
+      "group": "professional",
+      "player_index": 3,
+      "within_group_index": 3,
+      "sensitivity_mode": "habitual",
+      "target_color_level": "white",
+      "parameters": {
+        "motor": 0.24113266,
+        "position": 0.06684598,
+        "speed": 0.061259016,
+        "clock": 0.057575896,
+        "success": 41.2248,
+        "failure": 18.30107,
+        "reward_decay": 40.26631,
+        "penalty_decay": 33.720237
+      },
+      "raw_values": {
+        "motor": "0.24113266",
+        "position": "0.06684598",
+        "speed": "0.061259016",
+        "clock": "0.057575896",
+        "success": "41.2248",
+        "failure": "18.30107",
+        "reward_decay": "40.26631",
+        "penalty_decay": "33.720237"
+      }
+    },
+    {
+      "id": "professional_p04_habitual_white",
+      "label": "프로 P05",
+      "kind": "individual_condition",
+      "group": "professional",
+      "player_index": 4,
+      "within_group_index": 4,
+      "sensitivity_mode": "habitual",
+      "target_color_level": "white",
+      "parameters": {
+        "motor": 0.17696245,
+        "position": 0.2173424,
+        "speed": 0.024393454,
+        "clock": 0.12902097,
+        "success": 27.239958,
+        "failure": 23.764864,
+        "reward_decay": 47.080472,
+        "penalty_decay": 41.070026
+      },
+      "raw_values": {
+        "motor": "0.17696245",
+        "position": "0.2173424",
+        "speed": "0.024393454",
+        "clock": "0.12902097",
+        "success": "27.239958",
+        "failure": "23.764864",
+        "reward_decay": "47.080472",
+        "penalty_decay": "41.070026"
+      }
+    },
+    {
+      "id": "professional_p05_habitual_white",
+      "label": "프로 P06",
+      "kind": "individual_condition",
+      "group": "professional",
+      "player_index": 5,
+      "within_group_index": 5,
+      "sensitivity_mode": "habitual",
+      "target_color_level": "white",
+      "parameters": {
+        "motor": 0.2786242,
+        "position": 0.07149136,
+        "speed": 0.051556185,
+        "clock": 0.049602866,
+        "success": 44.839676,
+        "failure": 20.803694,
+        "reward_decay": 52.070165,
+        "penalty_decay": 33.006668
+      },
+      "raw_values": {
+        "motor": "0.2786242",
+        "position": "0.07149136",
+        "speed": "0.051556185",
+        "clock": "0.049602866",
+        "success": "44.839676",
+        "failure": "20.803694",
+        "reward_decay": "52.070165",
+        "penalty_decay": "33.006668"
+      }
+    },
+    {
+      "id": "professional_p06_habitual_white",
+      "label": "프로 P07",
+      "kind": "individual_condition",
+      "group": "professional",
+      "player_index": 6,
+      "within_group_index": 6,
+      "sensitivity_mode": "habitual",
+      "target_color_level": "white",
+      "parameters": {
+        "motor": 0.15061468,
+        "position": 0.080910474,
+        "speed": 0.022400036,
+        "clock": 0.05040759,
+        "success": 42.094162,
+        "failure": 8.396294,
+        "reward_decay": 41.21781,
+        "penalty_decay": 53.57766
+      },
+      "raw_values": {
+        "motor": "0.15061468",
+        "position": "0.080910474",
+        "speed": "0.022400036",
+        "clock": "0.05040759",
+        "success": "42.094162",
+        "failure": "8.396294",
+        "reward_decay": "41.21781",
+        "penalty_decay": "53.57766"
+      }
+    },
+    {
+      "id": "professional_p07_habitual_white",
+      "label": "프로 P08",
+      "kind": "individual_condition",
+      "group": "professional",
+      "player_index": 7,
+      "within_group_index": 7,
+      "sensitivity_mode": "habitual",
+      "target_color_level": "white",
+      "parameters": {
+        "motor": 0.16553155,
+        "position": 0.15601084,
+        "speed": 0.020915061,
+        "clock": 0.09266797,
+        "success": 20.311916,
+        "failure": 15.975668,
+        "reward_decay": 42.77572,
+        "penalty_decay": 41.550648
+      },
+      "raw_values": {
+        "motor": "0.16553155",
+        "position": "0.15601084",
+        "speed": "0.020915061",
+        "clock": "0.09266797",
+        "success": "20.311916",
+        "failure": "15.975668",
+        "reward_decay": "42.77572",
+        "penalty_decay": "41.550648"
+      }
+    },
+    {
+      "id": "professional_p08_habitual_white",
+      "label": "프로 P09",
+      "kind": "individual_condition",
+      "group": "professional",
+      "player_index": 8,
+      "within_group_index": 8,
+      "sensitivity_mode": "habitual",
+      "target_color_level": "white",
+      "parameters": {
+        "motor": 0.2607507,
+        "position": 0.0791204,
+        "speed": 0.068351835,
+        "clock": 0.046611935,
+        "success": 44.569122,
+        "failure": 23.84238,
+        "reward_decay": 38.816103,
+        "penalty_decay": 25.538334000000003
+      },
+      "raw_values": {
+        "motor": "0.2607507",
+        "position": "0.0791204",
+        "speed": "0.068351835",
+        "clock": "0.046611935",
+        "success": "44.569122",
+        "failure": "23.84238",
+        "reward_decay": "38.816103",
+        "penalty_decay": "25.538334000000003"
+      }
+    },
+    {
+      "id": "professional_p09_habitual_white",
+      "label": "프로 P10",
+      "kind": "individual_condition",
+      "group": "professional",
+      "player_index": 9,
+      "within_group_index": 9,
+      "sensitivity_mode": "habitual",
+      "target_color_level": "white",
+      "parameters": {
+        "motor": 0.13341223,
+        "position": 0.18576191,
+        "speed": 0.046693474,
+        "clock": 0.11803007,
+        "success": 29.2602,
+        "failure": 18.745518,
+        "reward_decay": 45.753092,
+        "penalty_decay": 39.677015
+      },
+      "raw_values": {
+        "motor": "0.13341223",
+        "position": "0.18576191",
+        "speed": "0.046693474",
+        "clock": "0.11803007",
+        "success": "29.2602",
+        "failure": "18.745518",
+        "reward_decay": "45.753092",
+        "penalty_decay": "39.677015"
+      }
+    },
+    {
+      "id": "amateur_mean",
+      "label": "아마추어 평균",
+      "kind": "group_mean",
+      "group": "amateur",
+      "n_players": 10,
+      "n_rows": 40,
+      "parameters": {
+        "motor": 0.242286847375,
+        "position": 0.171760898125,
+        "speed": 0.059506628495,
+        "clock": 0.07250821545,
+        "success": 32.274419,
+        "failure": 20.79447165,
+        "reward_decay": 35.55573295,
+        "penalty_decay": 50.823218825
+      }
+    },
+    {
+      "id": "amateur_p10_habitual_white",
+      "label": "아마추어 P01",
+      "kind": "individual_condition",
+      "group": "amateur",
+      "player_index": 10,
+      "within_group_index": 0,
+      "sensitivity_mode": "habitual",
+      "target_color_level": "white",
+      "parameters": {
+        "motor": 0.31029314,
+        "position": 0.099074036,
+        "speed": 0.023939371,
+        "clock": 0.046452537,
+        "success": 37.10671,
+        "failure": 11.723869,
+        "reward_decay": 36.500576,
+        "penalty_decay": 50.235265
+      },
+      "raw_values": {
+        "motor": "0.31029314",
+        "position": "0.099074036",
+        "speed": "0.023939371",
+        "clock": "0.046452537",
+        "success": "37.10671",
+        "failure": "11.723869",
+        "reward_decay": "36.500576",
+        "penalty_decay": "50.235265"
+      }
+    },
+    {
+      "id": "amateur_p11_habitual_white",
+      "label": "아마추어 P02",
+      "kind": "individual_condition",
+      "group": "amateur",
+      "player_index": 11,
+      "within_group_index": 1,
+      "sensitivity_mode": "habitual",
+      "target_color_level": "white",
+      "parameters": {
+        "motor": 0.15683457,
+        "position": 0.29066214,
+        "speed": 0.02734065,
+        "clock": 0.10719375,
+        "success": 17.538666,
+        "failure": 15.981903,
+        "reward_decay": 31.903553,
+        "penalty_decay": 76.12269
+      },
+      "raw_values": {
+        "motor": "0.15683457",
+        "position": "0.29066214",
+        "speed": "0.02734065",
+        "clock": "0.10719375",
+        "success": "17.538666",
+        "failure": "15.981903",
+        "reward_decay": "31.903553",
+        "penalty_decay": "76.12269"
+      }
+    },
+    {
+      "id": "amateur_p12_habitual_white",
+      "label": "아마추어 P03",
+      "kind": "individual_condition",
+      "group": "amateur",
+      "player_index": 12,
+      "within_group_index": 2,
+      "sensitivity_mode": "habitual",
+      "target_color_level": "white",
+      "parameters": {
+        "motor": 0.2301414,
+        "position": 0.11235857,
+        "speed": 0.019311517,
+        "clock": 0.03921148,
+        "success": 34.634216,
+        "failure": 12.628309,
+        "reward_decay": 38.73669,
+        "penalty_decay": 57.32958299999999
+      },
+      "raw_values": {
+        "motor": "0.2301414",
+        "position": "0.11235857",
+        "speed": "0.019311517",
+        "clock": "0.03921148",
+        "success": "34.634216",
+        "failure": "12.628309",
+        "reward_decay": "38.73669",
+        "penalty_decay": "57.32958299999999"
+      }
+    },
+    {
+      "id": "amateur_p13_habitual_white",
+      "label": "아마추어 P04",
+      "kind": "individual_condition",
+      "group": "amateur",
+      "player_index": 13,
+      "within_group_index": 3,
+      "sensitivity_mode": "habitual",
+      "target_color_level": "white",
+      "parameters": {
+        "motor": 0.2762646,
+        "position": 0.10424891,
+        "speed": 0.10382795,
+        "clock": 0.033499047,
+        "success": 50.285675,
+        "failure": 29.284784,
+        "reward_decay": 33.37204,
+        "penalty_decay": 12.710154
+      },
+      "raw_values": {
+        "motor": "0.2762646",
+        "position": "0.10424891",
+        "speed": "0.10382795",
+        "clock": "0.033499047",
+        "success": "50.285675",
+        "failure": "29.284784",
+        "reward_decay": "33.37204",
+        "penalty_decay": "12.710154"
+      }
+    },
+    {
+      "id": "amateur_p14_habitual_white",
+      "label": "아마추어 P05",
+      "kind": "individual_condition",
+      "group": "amateur",
+      "player_index": 14,
+      "within_group_index": 4,
+      "sensitivity_mode": "habitual",
+      "target_color_level": "white",
+      "parameters": {
+        "motor": 0.2792254,
+        "position": 0.06895906,
+        "speed": 0.071878165,
+        "clock": 0.054020256,
+        "success": 41.55342,
+        "failure": 19.499634,
+        "reward_decay": 39.55402,
+        "penalty_decay": 28.98289
+      },
+      "raw_values": {
+        "motor": "0.2792254",
+        "position": "0.06895906",
+        "speed": "0.071878165",
+        "clock": "0.054020256",
+        "success": "41.55342",
+        "failure": "19.499634",
+        "reward_decay": "39.55402",
+        "penalty_decay": "28.98289"
+      }
+    },
+    {
+      "id": "amateur_p15_habitual_white",
+      "label": "아마추어 P06",
+      "kind": "individual_condition",
+      "group": "amateur",
+      "player_index": 15,
+      "within_group_index": 5,
+      "sensitivity_mode": "habitual",
+      "target_color_level": "white",
+      "parameters": {
+        "motor": 0.32435662,
+        "position": 0.11599979,
+        "speed": 0.09082064,
+        "clock": 0.020449609,
+        "success": 34.408585,
+        "failure": 51.99563,
+        "reward_decay": 27.187747,
+        "penalty_decay": 48.039195
+      },
+      "raw_values": {
+        "motor": "0.32435662",
+        "position": "0.11599979",
+        "speed": "0.09082064",
+        "clock": "0.020449609",
+        "success": "34.408585",
+        "failure": "51.99563",
+        "reward_decay": "27.187747",
+        "penalty_decay": "48.039195"
+      }
+    },
+    {
+      "id": "amateur_p16_habitual_white",
+      "label": "아마추어 P07",
+      "kind": "individual_condition",
+      "group": "amateur",
+      "player_index": 16,
+      "within_group_index": 6,
+      "sensitivity_mode": "habitual",
+      "target_color_level": "white",
+      "parameters": {
+        "motor": 0.27236858,
+        "position": 0.17154865,
+        "speed": 0.03946498,
+        "clock": 0.099126905,
+        "success": 21.753273,
+        "failure": 10.097996,
+        "reward_decay": 35.913402,
+        "penalty_decay": 61.20816
+      },
+      "raw_values": {
+        "motor": "0.27236858",
+        "position": "0.17154865",
+        "speed": "0.03946498",
+        "clock": "0.099126905",
+        "success": "21.753273",
+        "failure": "10.097996",
+        "reward_decay": "35.913402",
+        "penalty_decay": "61.20816"
+      }
+    },
+    {
+      "id": "amateur_p17_habitual_white",
+      "label": "아마추어 P08",
+      "kind": "individual_condition",
+      "group": "amateur",
+      "player_index": 17,
+      "within_group_index": 7,
+      "sensitivity_mode": "habitual",
+      "target_color_level": "white",
+      "parameters": {
+        "motor": 0.078483135,
+        "position": 0.37036517,
+        "speed": 0.06956698,
+        "clock": 0.14670186,
+        "success": 34.48489,
+        "failure": 20.127384,
+        "reward_decay": 33.8719,
+        "penalty_decay": 56.50674
+      },
+      "raw_values": {
+        "motor": "0.078483135",
+        "position": "0.37036517",
+        "speed": "0.06956698",
+        "clock": "0.14670186",
+        "success": "34.48489",
+        "failure": "20.127384",
+        "reward_decay": "33.8719",
+        "penalty_decay": "56.50674"
+      }
+    },
+    {
+      "id": "amateur_p18_habitual_white",
+      "label": "아마추어 P09",
+      "kind": "individual_condition",
+      "group": "amateur",
+      "player_index": 18,
+      "within_group_index": 8,
+      "sensitivity_mode": "habitual",
+      "target_color_level": "white",
+      "parameters": {
+        "motor": 0.27615634,
+        "position": 0.13264965,
+        "speed": 0.043017015,
+        "clock": 0.06250462,
+        "success": 33.67641,
+        "failure": 13.006466,
+        "reward_decay": 44.506216,
+        "penalty_decay": 56.691754
+      },
+      "raw_values": {
+        "motor": "0.27615634",
+        "position": "0.13264965",
+        "speed": "0.043017015",
+        "clock": "0.06250462",
+        "success": "33.67641",
+        "failure": "13.006466",
+        "reward_decay": "44.506216",
+        "penalty_decay": "56.691754"
+      }
+    },
+    {
+      "id": "amateur_p19_habitual_white",
+      "label": "아마추어 P10",
+      "kind": "individual_condition",
+      "group": "amateur",
+      "player_index": 19,
+      "within_group_index": 9,
+      "sensitivity_mode": "habitual",
+      "target_color_level": "white",
+      "parameters": {
+        "motor": 0.27176937,
+        "position": 0.0958595,
+        "speed": 0.10058716,
+        "clock": 0.03952098,
+        "success": 51.729492,
+        "failure": 32.054962,
+        "reward_decay": 36.27366,
+        "penalty_decay": 18.226516
+      },
+      "raw_values": {
+        "motor": "0.27176937",
+        "position": "0.0958595",
+        "speed": "0.10058716",
+        "clock": "0.03952098",
+        "success": "51.729492",
+        "failure": "32.054962",
+        "reward_decay": "36.27366",
+        "penalty_decay": "18.226516"
+      }
+    }
+  ],
+  "individual_selection": "One row per player: habitual sensitivity, white target; original participant-condition values"
+}

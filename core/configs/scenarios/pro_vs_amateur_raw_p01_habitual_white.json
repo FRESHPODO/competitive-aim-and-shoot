@@ -1,0 +1,293 @@
+{
+  "episodes": 1000,
+  "timeoutSeconds": 30,
+  "seed": 421,
+  "parameters": {
+    "targetHp": {
+      "mode": "fixed",
+      "value": 1000,
+      "min": 1000,
+      "max": 1000,
+      "step": 1.0
+    },
+    "criticalRadius": {
+      "mode": "fixed",
+      "value": 0.01,
+      "min": 0.01,
+      "max": 0.01,
+      "step": 0.01
+    },
+    "targetRadius": {
+      "mode": "fixed",
+      "value": 5,
+      "min": 5,
+      "max": 5,
+      "step": 1.0
+    },
+    "targetSpeed": {
+      "mode": "uniform",
+      "value": 12,
+      "min": 0,
+      "max": 40,
+      "step": 1.0
+    },
+    "A.motor": {
+      "mode": "fixed",
+      "value": 0.22627196,
+      "min": 0.22627196,
+      "max": 0.22627196,
+      "step": 0.01
+    },
+    "A.position": {
+      "mode": "fixed",
+      "value": 0.097331464,
+      "min": 0.097331464,
+      "max": 0.097331464,
+      "step": 0.01
+    },
+    "A.speed": {
+      "mode": "fixed",
+      "value": 0.027683198,
+      "min": 0.027683198,
+      "max": 0.027683198,
+      "step": 0.01
+    },
+    "A.clock": {
+      "mode": "fixed",
+      "value": 0.034341216,
+      "min": 0.034341216,
+      "max": 0.034341216,
+      "step": 0.01
+    },
+    "A.success": {
+      "mode": "fixed",
+      "value": 42.91365,
+      "min": 42.91365,
+      "max": 42.91365,
+      "step": 1.0
+    },
+    "A.failure": {
+      "mode": "fixed",
+      "value": 11.606518,
+      "min": 11.606518,
+      "max": 11.606518,
+      "step": 1.0
+    },
+    "A.reward_decay": {
+      "mode": "fixed",
+      "value": 38.724047,
+      "min": 38.724047,
+      "max": 38.724047,
+      "step": 1.0
+    },
+    "A.penalty_decay": {
+      "mode": "fixed",
+      "value": 47.297943,
+      "min": 47.297943,
+      "max": 47.297943,
+      "step": 1.0
+    },
+    "A.minDamage": {
+      "mode": "fixed",
+      "value": 100,
+      "min": 100,
+      "max": 100,
+      "step": 1.0
+    },
+    "A.maxDamage": {
+      "mode": "fixed",
+      "value": 300,
+      "min": 300,
+      "max": 300,
+      "step": 1.0
+    },
+    "A.cooldown": {
+      "mode": "fixed",
+      "value": 150,
+      "min": 150,
+      "max": 150,
+      "step": 1.0
+    },
+    "A.spread": {
+      "mode": "fixed",
+      "value": 0,
+      "min": 0,
+      "max": 0,
+      "step": 1.0
+    },
+    "A.instantKill": {
+      "mode": "fixed",
+      "value": 1,
+      "min": 1,
+      "max": 1,
+      "step": 1.0
+    },
+    "A.spreadEnabled": {
+      "mode": "fixed",
+      "value": 0,
+      "min": 0,
+      "max": 0,
+      "step": 1.0
+    },
+    "B.motor": {
+      "mode": "fixed",
+      "value": 0.31029314,
+      "min": 0.31029314,
+      "max": 0.31029314,
+      "step": 0.01
+    },
+    "B.position": {
+      "mode": "fixed",
+      "value": 0.099074036,
+      "min": 0.099074036,
+      "max": 0.099074036,
+      "step": 0.01
+    },
+    "B.speed": {
+      "mode": "fixed",
+      "value": 0.023939371,
+      "min": 0.023939371,
+      "max": 0.023939371,
+      "step": 0.01
+    },
+    "B.clock": {
+      "mode": "fixed",
+      "value": 0.046452537,
+      "min": 0.046452537,
+      "max": 0.046452537,
+      "step": 0.01
+    },
+    "B.success": {
+      "mode": "fixed",
+      "value": 37.10671,
+      "min": 37.10671,
+      "max": 37.10671,
+      "step": 1.0
+    },
+    "B.failure": {
+      "mode": "fixed",
+      "value": 11.723869,
+      "min": 11.723869,
+      "max": 11.723869,
+      "step": 1.0
+    },
+    "B.reward_decay": {
+      "mode": "fixed",
+      "value": 36.500576,
+      "min": 36.500576,
+      "max": 36.500576,
+      "step": 1.0
+    },
+    "B.penalty_decay": {
+      "mode": "fixed",
+      "value": 50.235265,
+      "min": 50.235265,
+      "max": 50.235265,
+      "step": 1.0
+    },
+    "B.minDamage": {
+      "mode": "fixed",
+      "value": 100,
+      "min": 100,
+      "max": 100,
+      "step": 1.0
+    },
+    "B.maxDamage": {
+      "mode": "fixed",
+      "value": 300,
+      "min": 300,
+      "max": 300,
+      "step": 1.0
+    },
+    "B.cooldown": {
+      "mode": "fixed",
+      "value": 150,
+      "min": 150,
+      "max": 150,
+      "step": 1.0
+    },
+    "B.spread": {
+      "mode": "fixed",
+      "value": 0,
+      "min": 0,
+      "max": 0,
+      "step": 1.0
+    },
+    "B.instantKill": {
+      "mode": "fixed",
+      "value": 1,
+      "min": 1,
+      "max": 1,
+      "step": 1.0
+    },
+    "B.spreadEnabled": {
+      "mode": "fixed",
+      "value": 0,
+      "min": 0,
+      "max": 0,
+      "step": 1.0
+    }
+  },
+  "rewardConfig": {
+    "A": {
+      "win": {
+        "mode": "fixed",
+        "value": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "step": 1.0
+      },
+      "loss": {
+        "mode": "fixed",
+        "value": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "step": 1.0
+      }
+    },
+    "B": {
+      "win": {
+        "mode": "fixed",
+        "value": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "step": 1.0
+      },
+      "loss": {
+        "mode": "fixed",
+        "value": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "step": 1.0
+      }
+    }
+  },
+  "playerPresets": {
+    "A": {
+      "id": "professional_p00_habitual_white",
+      "label": "프로 P01 · 익숙한 감도 · 흰색",
+      "kind": "individual_condition",
+      "group": "professional",
+      "player_index": 0,
+      "within_group_index": 0,
+      "sensitivity_mode": "habitual",
+      "target_color_level": "white",
+      "doi": "10.1016/j.ijhcs.2025.103503",
+      "source_csv": "empirical/ijhcs_inference_results.csv",
+      "source_sha256": "61f363ac24f807658b020bdec7c2f016f617f62c8839a2c9fdb98f519e1f9a20"
+    },
+    "B": {
+      "id": "amateur_p10_habitual_white",
+      "label": "아마추어 P01 · 익숙한 감도 · 흰색",
+      "kind": "individual_condition",
+      "group": "amateur",
+      "player_index": 10,
+      "within_group_index": 0,
+      "sensitivity_mode": "habitual",
+      "target_color_level": "white",
+      "doi": "10.1016/j.ijhcs.2025.103503",
+      "source_csv": "empirical/ijhcs_inference_results.csv",
+      "source_sha256": "61f363ac24f807658b020bdec7c2f016f617f62c8839a2c9fdb98f519e1f9a20"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "enabled": true,
+  "learnerSide": "A",
+  "opponents": [
+    {
+      "name": "프로",
+      "model": "../.important_models/20261101_pro_pro_150000/agent_b.zip",
+      "presetId": "professional_mean",
+      "weaponPreset": null
+    },
+    {
+      "name": "아마추어",
+      "model": "../.important_models/20261101_ama_ama_120000/agent_b.zip",
+      "presetId": "amateur_mean",
+      "weaponPreset": null
+    }
+  ]
+}

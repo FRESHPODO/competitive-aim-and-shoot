@@ -1,0 +1,22 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><title>경기 3D 리플레이</title>
+<style>body{margin:0;background:#101827;color:#e4edff;font:16px system-ui}header{padding:16px}canvas{display:block;width:100%;height:72vh}button,select,input{margin:6px;padding:8px}#seek{width:45%}small{color:#b5c5db}</style>
+<header><b id="title"></b><div><button id="play">재생</button><button id="reset">처음</button><select id="speed"><option>.25</option><option>.5</option><option selected>1</option><option>2</option><option>4</option><option>8</option></select>배속 <input id="seek" type="range" min="0" step="1"><span id="status"></span></div><small>드래그: 3D 시점 회전 · 휠: 확대/축소 · 파랑 A / 주황 B · 두 에이전트의 실제 시작 위치는 동일 · 원: 피해 영역 / 빨강: 즉사 영역<br>저장 궤적 60Hz 보간 재생. 명중·피해·승패는 Python 엔진의 실제 판정 기록을 표시합니다.</small></header><canvas id="view"></canvas>
+<script>
+const D=/*REPLAY_DATA*/;
+const canvas=document.querySelector('#view'),ctx=canvas.getContext('2d'),seek=document.querySelector('#seek');
+document.querySelector('#title').textContent=D.label;seek.max=D.duration;
+let t=0,playing=false,yaw=.4,pitch=.3,zoom=1,previous=0,drag=null;
+const colors=['#69baff','#ffb560'];
+function project(p){let x=p[0]/D.distance,y=p[1]/D.distance,z=p[2]/D.distance;const a=x*Math.cos(yaw)-y*Math.sin(yaw),b=x*Math.sin(yaw)+y*Math.cos(yaw);const v=z*Math.cos(pitch)-b*Math.sin(pitch),depth=z*Math.sin(pitch)+b*Math.cos(pitch);let s=Math.min(canvas.width,canvas.height)*.65*zoom/(2.8-depth);return [canvas.width/2+a*s,canvas.height*.56-v*s,s/D.distance];}
+function line(a,b,color,width=1){a=project(a);b=project(b);ctx.strokeStyle=color;ctx.lineWidth=width;ctx.beginPath();ctx.moveTo(a[0],a[1]);ctx.lineTo(b[0],b[1]);ctx.stroke();}
+function dot(p,r,color){const q=project(p);ctx.fillStyle=color;ctx.beginPath();ctx.arc(q[0],q[1],Math.max(1,r*q[2]),0,Math.PI*2);ctx.fill();}
+function ring(center,r,color){let n=center.map(v=>v/D.distance),ref=Math.abs(n[2])<.9?[0,0,1]:[0,1,0];let u=[n[1]*ref[2]-n[2]*ref[1],n[2]*ref[0]-n[0]*ref[2],n[0]*ref[1]-n[1]*ref[0]],l=Math.hypot(...u);u=u.map(v=>v/l);let v=[n[1]*u[2]-n[2]*u[1],n[2]*u[0]-n[0]*u[2],n[0]*u[1]-n[1]*u[0]],last=null;for(let i=0;i<=64;i++){let a=i/64*Math.PI*2,p=center.map((c,k)=>c+r*(u[k]*Math.cos(a)+v[k]*Math.sin(a)));if(last)line(last,p,color,2);last=p;}}
+function render(now){canvas.width=canvas.clientWidth*devicePixelRatio;canvas.height=canvas.clientHeight*devicePixelRatio;if(playing)t=Math.min(D.duration,t+(now-previous)*Number(document.querySelector('#speed').value));previous=now;if(t>=D.duration)playing=false;seek.value=t;document.querySelector('#play').textContent=playing?'일시정지':'재생';ctx.clearRect(0,0,canvas.width,canvas.height);const i=Math.min(D.frames.length-1,Math.floor(t/(1000/60))),f=D.frames[i],zero=[0,0,0];
+for(let k=0;k<3;k++){let p=[0,0,0];p[k]=D.distance*1.2;line(zero,p,['#663c4c','#365d4c','#3a4d72'][k]);}
+for(let j=Math.max(1,i-120);j<=i;j++)line(D.frames[j-1].target,D.frames[j].target,'#475a79');
+dot(zero,D.distance*.018,'#ffffff');ring(f.target,D.radius,'#e1eaf5');ring(f.target,D.radius*D.critical,'#ff4e6b');dot(f.target,D.radius*D.critical,'#ff4e6b');
+f.aims.forEach((a,k)=>{line(zero,a,colors[k]);dot(a,D.distance*.008,colors[k]);});
+D.shots.filter(s=>s.t<=t&&t-s.t<180).forEach(s=>line(zero,s.point,colors[s.agent],4));
+let events=D.events.filter(e=>e.timeMs<=t),hp=events.length?events[events.length-1].hpAfter:D.hp;document.querySelector('#status').textContent=(t/1000).toFixed(2)+'s / HP '+hp.toFixed(0)+' / 발사 '+D.shots.filter(s=>s.t<=t).length;requestAnimationFrame(render);}
+document.querySelector('#play').onclick=()=>{if(t>=D.duration)t=0;playing=!playing;};document.querySelector('#reset').onclick=()=>{t=0;playing=false;};seek.oninput=()=>{t=Number(seek.value);};canvas.onpointerdown=e=>{drag=[e.clientX,e.clientY];canvas.setPointerCapture(e.pointerId);};canvas.onpointermove=e=>{if(drag){yaw+=(e.clientX-drag[0])*.008;pitch+=(e.clientY-drag[1])*.008;drag=[e.clientX,e.clientY];}};canvas.onpointerup=()=>drag=null;canvas.onwheel=e=>{e.preventDefault();zoom=Math.max(.3,Math.min(6,zoom*Math.exp(-e.deltaY*.001)));};requestAnimationFrame(render);
+</script></html>
