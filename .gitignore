@@ -7,7 +7,6 @@ Panda3D-*.pz/
 src/datamanager/process_ijhcs_exp.py
 src/scripts/*
 !src/scripts/gui_simulator.py
-empirical/video/
 *.pdf
 
 ######################################
@@ -186,29 +185,29 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
-# Cursor  
-#  Cursor is an AI-powered code editor.`.cursorignore` specifies files/directories to 
+# Cursor
+#  Cursor is an AI-powered code editor.`.cursorignore` specifies files/directories to
 #  exclude from AI features like autocomplete and code analysis. Recommended for sensitive data
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
 
-# Local Unity generated files
-UnitySimulator/Library/
-UnitySimulator/Temp/
-UnitySimulator/Logs/
-UnitySimulator/obj/
-UnitySimulator/UserSettings/
-UnityBuild/
 
 # Local run artifacts and machine configuration
 local-results/
-UnityEditor.local.txt
 .codex/
-*.user
-*.csproj
-*.sln
 
-# Optional original data downloaded on demand
-empirical/trajectories_60hz.h5
 *.download
+
+# Local trainer artifacts
+core/python-path.txt
+core/app-settings/
+core/training-results/
+core/curriculum-results/
+core/generational-results/
+core/generational-logs/
+core/match-results/
+core/storage-reports/
+core/trained-models/
+학습모델/**/live/
+.important_models/
